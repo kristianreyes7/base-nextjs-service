@@ -2,7 +2,7 @@ export * from "./index";
 export * from "../service";
 export * from "../service-error";
 
-declare module 'wynn-nextjs-service' {
+declare module 'base-nextjs-service' {
     import { StatusCodes, ApiRequest, ServiceResponse } from "./index";
 
     export class ApiError<TErr> extends Error {
