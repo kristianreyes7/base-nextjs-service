@@ -1,5 +1,5 @@
 {
-  "name": "wynn-nextjs-service",
+  "name": "base-nextjs-service",
   "version": "1.0.1",
   "description": "base service ",
   "main": "index.js",
