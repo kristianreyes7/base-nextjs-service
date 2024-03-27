@@ -13,9 +13,9 @@ declare module 'base-next-service' {
 
     export function handleApiErrors<TErr>(status: StatusCodes, response: TErr): ApiError<TErr>;
 
-    export function GET<TRes, TErr>(req: ApiRequest): Promise<ServiceResponse<TRes, TErr>>;
-    export function POST<TReq extends BodyInit | null | undefined, TRes, TErr>(req: ApiRequest): Promise<ServiceResponse<TRes, TErr>>;
-    export function PUT<TReq extends BodyInit | null | undefined, TRes, TErr>(req: ApiRequest): Promise<ServiceResponse<TRes, TErr>>;
-    export function DELETE<TRes, TErr>(req: ApiRequest): Promise<ServiceResponse<TRes, TErr>>;
+    export function GET<TRes, TErr>(req: ApiRequest, signal?: AbortSignal): Promise<ServiceResponse<TRes, TErr>>;
+    export function POST<TReq extends BodyInit | null | undefined, TRes, TErr>(req: ApiRequest, signal?: AbortSignal): Promise<ServiceResponse<TRes, TErr>>;
+    export function PUT<TReq extends BodyInit | null | undefined, TRes, TErr>(req: ApiRequest, signal?: AbortSignal): Promise<ServiceResponse<TRes, TErr>>;
+    export function DELETE<TRes, TErr>(req: ApiRequest, signal?: AbortSignal): Promise<ServiceResponse<TRes, TErr>>;
   }
   
