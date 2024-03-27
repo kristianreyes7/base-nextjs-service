@@ -1,5 +1,5 @@
 {
-  "name": "base-nextjs-service",
+  "name": "base-next-service",
   "version": "1.0.6",
   "description": "base service ",
   "main": "index.js",
